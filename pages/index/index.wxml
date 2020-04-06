@@ -1,0 +1,22 @@
+<view class='header'>
+  {{ city }}天气
+</view>
+<view class='search'>
+  <input bindinput='inp_event' placeholder='请输入城市...'>  </input>
+  <image bindtap='click_event' src='../../img/search_1.png' style='height:20px; width:20px;'></image>
+</view>
+<view class='content'>
+  <view class='list'>
+  <block wx:for="{{arr}}" wx:key="index">
+    <view class='opt'>
+    <!-- url实现页面跳转 -->
+      <navigator url='../detail/detail?date={{item.date}}'>
+        <view>{{item.date}}</view>
+        <view>{{item.week}}</view>
+        <view>{{item.weather}}</view>
+        <view>{{item.real}}</view>
+      </navigator>
+    </view>
+    </block>
+  </view>
+</view>

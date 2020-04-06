@@ -1,0 +1,31 @@
+.header {
+  height: 50px;
+  background-color: skyblue;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+.content {
+  width: 100%;
+  margin: 10px auto;
+}
+.content .list {
+   width: 100%;
+}
+.content .list .box {
+  height: 150px;
+   /* background-color: skyblue;  */
+  padding:0px 8px;
+  box-sizing: border-box;
+}
+.content .list .box > view {
+  height:30px;
+  background-color: white;
+  border-bottom: 1px dashed #ccc;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  box-sizing: border-box;
+}
+

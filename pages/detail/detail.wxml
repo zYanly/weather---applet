@@ -1,0 +1,22 @@
+<view class="header">
+       {{date}}天气情况 
+</view>
+<view class="content">
+    <view class="list">
+        <swiper>
+      <!-- 列表渲染 -->
+        <block wx:for="{{arr2}}" wx:key="index">
+              <swiper-item>
+                    <view class="box">
+                      <view>最高温度：{{arr2.highest}}</view>
+                      <view>最低温度：{{arr2.lowest}}</view>
+                      <view>风向：{{arr2.wind}}</view>
+                      <view>风力：{{arr2.windsc}}</view>
+                      <view>温馨提示：{{arr2.tips}}</view>
+                    </view>
+              </swiper-item>
+          </block>
+        </swiper>
+    </view>
+</view> 
+
